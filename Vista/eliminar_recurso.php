@@ -7,7 +7,7 @@
 <body>
 <nav class="navbar navbar-default">
     <div class="container-fluid">
-        <a href="panel.php" class="btn btn-primary">Volver al inicio</a>
+        <a href="panel.php" class="btn btn-primary">Volver</a>
     </div>
 </nav>
 <div class="container">
