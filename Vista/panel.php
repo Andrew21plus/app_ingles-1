@@ -62,9 +62,9 @@ $modulo = isset($_GET['modulo']) ? $_GET['modulo'] : '';
 <body class="hold-transition sidebar-mini layout-fixed sidebar-collapse">
   <div class="wrapper">
     <!-- Preloader -->
-    <div class="preloader flex-column justify-content-center align-items-center">
+    <!-- <div class="preloader flex-column justify-content-center align-items-center">
       <img class="animation__shake" src="../Publico/img/soloLogoRatbio.png" alt="My App Logo" height="60" width="60" />
-    </div>
+    </div> -->
 
     <!-- Navbar -->
     <nav class="main-header navbar navbar-expand navbar-white navbar-light">
@@ -222,6 +222,13 @@ $modulo = isset($_GET['modulo']) ? $_GET['modulo'] : '';
                     <p>Racha</p>
                   </a>
                 </li>
+                <li class="nav-item">
+                  <a href="panel.php?modulo=recursos"
+                    class="nav-link <?php echo ($modulo == "recursos" || $modulo == "inicio" || $modulo == "") ? " active " : " "; ?>">
+                    <i class="fas fa-fire nav-icon" aria-hidden="true"></i>
+                    <p>Recursos</p>
+                  </a>
+                </li>
               </ul>
         </nav>
         <!-- /.sidebar-menu -->
@@ -266,6 +273,9 @@ $modulo = isset($_GET['modulo']) ? $_GET['modulo'] : '';
     }
     if ($modulo == 'editarUsuario') {
       include_once 'editarUsuario.php';
+    }
+    if ($modulo == 'recursos') {
+      include_once 'admin_recursos.php';
     }
     ?>
 
